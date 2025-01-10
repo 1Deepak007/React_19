@@ -39,7 +39,7 @@ const React_states = () => {
     setFilteredusers(filtered)
   }
 
-
+  const [val,setval] = useState('Default value');
 
 
   return (
@@ -94,6 +94,12 @@ const React_states = () => {
             ))
           )}
         </ul>
+      </div>
+
+      <div className='text-center mt-0 bg-gray-100 pt-2 pb-2'>
+          <input type="text" value={val} onChange={(e)=>setval(e.target.value)} />
+          <h2>{val}</h2>
+          <button onClick={()=>setval('')} className='p-2 mt-2 bg-blue-300 rounded-full'>clear value</button>
       </div>
 
     </div>

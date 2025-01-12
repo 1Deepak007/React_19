@@ -79,7 +79,7 @@ const Navbar = () => {
                                     aria-labelledby="menu-button"
                                     tabIndex="-1"
                                 >
-                                    <div className="py-1 " role="none">
+                                    <div className="py-1" role="none">
                                         <Link
                                             to="/"
                                             className="block px-4 py-2 text-sm text-gray-700"
@@ -151,6 +151,78 @@ const Navbar = () => {
                                             onClick={() => setShowDropdown(false)}
                                         >
                                             UseEffect Hook
+                                        </Link>
+                                        <Link
+                                            to="/useref_fwdref"
+                                            className="block px-4 py-2 text-sm text-gray-700"
+                                            role="menuitem"
+                                            tabIndex="-1"
+                                            onClick={() => setShowDropdown(false)}
+                                        >
+                                            UseRef FwdRef Hook
+                                        </Link>
+                                        <Link
+                                            to="/uncontrolledComp"
+                                            className="block px-4 py-2 text-sm text-gray-700"
+                                            role="menuitem"
+                                            tabIndex="-1"
+                                            onClick={() => setShowDropdown(false)}
+                                        >
+                                            UnControlled Component
+                                        </Link>
+                                        <Link
+                                            to="/passingFxnInComp"
+                                            className="block px-4 py-2 text-sm text-gray-700"
+                                            role="menuitem"
+                                            tabIndex="-1"
+                                            onClick={() => setShowDropdown(false)}
+                                        >
+                                            Passing Fxn As Prop
+                                        </Link>
+                                        <Link
+                                            to="/usFrmStatus"
+                                            className="block px-4 py-2 text-sm text-gray-700"
+                                            role="menuitem"
+                                            tabIndex="-1"
+                                            onClick={() => setShowDropdown(false)}
+                                        >
+                                            Use Form Status Use Action State
+                                        </Link>
+                                        <Link
+                                            to="/useTransition"
+                                            className="block px-4 py-2 text-sm text-gray-700"
+                                            role="menuitem"
+                                            tabIndex="-1"
+                                            onClick={() => setShowDropdown(false)}
+                                        >
+                                            Use Transition Hook
+                                        </Link>
+                                        <Link
+                                            to="/liftingstatup"
+                                            className="block px-4 py-2 text-sm text-gray-700"
+                                            role="menuitem"
+                                            tabIndex="-1"
+                                            onClick={() => setShowDropdown(false)}
+                                        >
+                                            Lifting state up
+                                        </Link>
+                                        <Link
+                                            to="/useidhook"
+                                            className="block px-4 py-2 text-sm text-gray-700"
+                                            role="menuitem"
+                                            tabIndex="-1"
+                                            onClick={() => setShowDropdown(false)}
+                                        >
+                                            UseId Hook, React Fragment
+                                        </Link>
+                                        <Link
+                                            to="/contextapi"
+                                            className="block px-4 py-2 text-sm text-gray-700"
+                                            role="menuitem"
+                                            tabIndex="-1"
+                                            onClick={() => setShowDropdown(false)}
+                                        >
+                                            Context API
                                         </Link>
                                     </div>
                                 </div>

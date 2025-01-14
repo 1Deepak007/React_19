@@ -1,0 +1,24 @@
+{
+    "users": [
+        {
+            "name": "John Doe",
+            "age": 22,
+            "email": "john@example.com"
+        },
+        {
+            "name": "Jane Smith",
+            "age": 25,
+            "email": "jane@example.com"
+        },
+        {
+            "name": "Michael Brown",
+            "age": 28,
+            "email": "michael@example.com"
+        },
+        {
+            "name": "Emily White",
+            "age": 30,
+            "email": "emily@example.com"
+        }
+    ]
+}

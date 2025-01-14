@@ -7,6 +7,8 @@ import College from "./components/College"
 import Student from "./components/SubComponents/Student"
 import Department from "./components/SubComponents/Department"
 import CollegeDetails from "./components/SubComponents/CollegeDetails"
+import User from "./components/SubComponents/User"
+import UserDetails from "./components/SubComponents/UserDetails"
 
 
 function App() {
@@ -24,12 +26,14 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<div className="p-4"><h1 className="text-2xl underline text-center">Contact Details</h1> <ul><li>Name : Deepak Gautam</li> <li>Email : ds095536@gmail.com</li> <li>Phone : 1234567890</li></ul></div>} />
+        <Route path="/users/userlist?" element={<User />} />    {/* this route will work as /user and /user/list also */}
+        <Route path="/user/:id" element={<UserDetails />} />
+        <Route path="/user/:id/:name?" element={<UserDetails />} />
       </Route>
       {/* Nested Routing */}
-      <Route path="/college" element={<College />}>
-        {/* <Route path="/college" element={<Student />} /> 
-            OR */}
-        <Route index element={<Student />} />
+      <Route path="college" element={<College />}>
+        <Route path="/college/student" element={<Student />} /> 
+        {/* <Route index element={<Student />} /> */}
         <Route path="/college/department" element={<Department />} />
         <Route path="/college/collegedetails" element={<CollegeDetails />} />
       </Route>

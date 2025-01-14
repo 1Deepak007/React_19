@@ -5,17 +5,16 @@ const College = () => {
     return (
         <>
             <h2 className='text-3xl text-center underline'>College</h2>
-            <div className='gap-4 p-2 mb-0 m-2'>
+            <div className='gap-4 p-2 mb-0 m-2 bg-black'>
                 {/* Nested Routing */}
                 <div className='text-center space-x-4 ms-4'>
-                    {/* <NavLink to={'/college/student'} className={({ isActive }) => isActive ? 'text-blue-900' : ''}>Student</NavLink> */}
-                    <Link to={''} className={({ isActive }) => isActive ? 'text-blue-900' : ''}>Student</Link>
-                    <NavLink to={'/college/department'} className={({ isActive }) => isActive ? 'text-blue-900' : ''}>Departments</NavLink>
-                    <NavLink to={'/college/collegedetails'} className={({ isActive }) => isActive ? 'text-blue-900' : ''}>CollegeDetails</NavLink>
-                    <NavLink to={'/'} className={({ isActive }) => isActive ? 'text-blue-900' : ''} >Home</NavLink>
+                    <NavLink to={'/college/student'} className={({ isActive }) => isActive ? 'text-blue-400' : 'text-white'}>Student</NavLink>
+                    <NavLink to={'/college/department'} className={({ isActive }) => isActive ? 'text-blue-400' : 'text-white'}>Departments</NavLink>
+                    <NavLink to={'/college/collegedetails'} className={({ isActive }) => isActive ? 'text-blue-400' : 'text-white'}>CollegeDetails</NavLink>
+                    <NavLink to={'/'} className={({ isActive }) => isActive ? 'text-blue-400' : 'text-white'} >Home</NavLink>
                 </div>
-                
-                
+
+
                 {/* <div className='flex justify-end w-full me-4'>
                     <NavLink to={'/'} className={({ isActive }) => isActive ? 'text-blue-900' : ''} >Home</NavLink>
                 </div> */}

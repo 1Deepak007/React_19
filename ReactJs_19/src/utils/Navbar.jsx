@@ -224,6 +224,15 @@ const Navbar = () => {
                                         >
                                             Context API
                                         </Link>
+                                        <Link
+                                            to="/customhook"
+                                            className="block px-4 py-2 text-sm text-gray-700"
+                                            role="menuitem"
+                                            tabIndex="-1"
+                                            onClick={() => setShowDropdown(false)}
+                                        >
+                                            Custom Hook
+                                        </Link>
                                     </div>
                                 </div>
                             )}

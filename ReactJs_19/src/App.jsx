@@ -17,6 +17,7 @@ import UseTransition from './components/13UseTransition'
 import LiftingStateUp from './components/14LftgStatUp_UpdObjStat'
 import UseId_Hook from './components/15UseIdHk'
 import ContextAPI from './components/16ContextAPI'
+import CustomHook from './components/17CustomHook'
 
 
 
@@ -41,6 +42,7 @@ function App() {
         <Route path='/liftingstatup' element={<LiftingStateUp/>} />
         <Route path='/useidhook' element={<UseId_Hook/>} />
         <Route path='/contextapi' element={<ContextAPI/>} />
+        <Route path='/customhook' element={<CustomHook/>} />
 
         <Route path='*' element={<h1>404 Page Not Found</h1>} />
       </Routes>

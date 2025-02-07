@@ -4,14 +4,14 @@ import School from './utils/School';
 import { SubjectContext } from './utils/ContextApiData';
 
 const ContextAPI = () => {
-    const[subject,setSubject] = React.useState('');
+    const [subject, setSubject] = React.useState('');
     return (
         <>
             <div className='p-4'>
                 <h2 className='text-2xl text-center underline'>ContextAPI</h2>
                 <div className='flex mt-4'>
                     <div className="flex flex-col col">
-                        <img src={contextapi_image} alt="context api image" className='hover:scale-[200%]'/>
+                        <img src={contextapi_image} alt="context api image" className='hover:scale-[200%]' />
                     </div>
                     <div className="flex flex-col col ms-3">
                         <ul className='list-disc list-inside'>
@@ -27,16 +27,16 @@ const ContextAPI = () => {
             </div>
 
             {/* below is our main component */}
-            <div style={{background:'purple',padding:'10px',margin:'10px',width:'340px',borderRadius:'10px',boxShadow:'0 2px 4px rgba(0, 0, 0, 0.5)'}}>
+            <div style={{ background: 'purple', padding: '10px', margin: '10px', width: '340px', borderRadius: '10px', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.5)' }}>
                 <SubjectContext.Provider value={subject}>
                     <h2 className='text-white mb-2'>Context Api Component</h2>
-                    <select onChange={(e)=>setSubject(e.target.value)} value={subject} className='bg-black text-white text-center p-1 w-[40%]'>
+                    <select onChange={(e) => setSubject(e.target.value)} value={subject} className='bg-black text-white text-center p-1 w-[40%]'>
                         <option value="English">English</option>
                         <option value="Mathematics">Mathematics</option>
                         <option value="Science">Science</option>
                         <option value="History">History</option>
                     </select>
-                    <button className='bg-red-600 text-white text-center p-1 ms-16 w-[40%]' onClick={()=>setSubject('')}>Clear Subject</button>
+                    <button className='bg-red-600 text-white text-center p-1 ms-16 w-[40%]' onClick={() => setSubject('')}>Clear Subject</button>
                     <School />
                 </SubjectContext.Provider>
             </div>
